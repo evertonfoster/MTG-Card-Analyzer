@@ -1,0 +1,29 @@
+/* Basic styles for layout */
+body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+input, button { padding: 5px; margin: 10px; }
+.lexicon {
+    display: flex; /* Enables flexbox */
+    flex-wrap: wrap; /* Ensures entries wrap when needed */
+    justify-content: space-between; /* Distributes items evenly */
+    gap: 10px; /* Adds spacing between entries */
+    font-size: 13px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #098547;
+    padding: 5px;
+}
+
+/* Individual lexicon entry */
+.lexicon-entry {
+    flex: 1 1 300px; /* Allows dynamic resizing (min-width: 300px) */
+    border-width: 5px;
+    border-style: solid;
+    border-color: #d3dad7;
+    padding: 5px;
+    font-size: 13px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+/* Autocomplete dropdown */
+#suggestions { list-style: none; padding: 0; border: 1px solid #ccc; background: rgb(39, 129, 84); max-width: 200px; position: absolute; }
+#suggestions li { padding: 5px; cursor: pointer; }
+#suggestions li:hover { background-color: #aef0f0; }
